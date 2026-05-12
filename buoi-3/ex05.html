@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .table thead {
+        background: #000;
+        color: #fff;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="table" border="1px" cellpadding="10px" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Cột 1</th>
+          <th style="width: 700px">Cột 2</th>
+          <th style="width: 700px">Cột 3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cột 1</td>
+          <td>Cột 2</td>
+          <td rowspan="2">Cột 3</td>
+        </tr>
+        <tr>
+          <td>Cột 1</td>
+          <td>Cột 2</td>
+        </tr>
+        <tr>
+          <td colspan="2">Cột 1</td>
+          <td>Cột 3</td>
+        </tr>
+        <tr>
+          <td>Cột 1</td>
+          <td>Cột 2</td>
+          <td>Cột 3</td>
+        </tr>
+        <tr>
+          <td>Cột 1</td>
+          <td>Cột 2</td>
+          <td>Cột 3</td>
+        </tr>
+        <tr>
+          <td>Cột 1</td>
+          <td>Cột 2</td>
+          <td>Cột 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Tổng</th>
+          <th>20.000.000</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

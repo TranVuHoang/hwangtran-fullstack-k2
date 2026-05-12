@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get" class="ml-5 mt-5 mr-5">
+      <div>
+        <!-- Username -->
+        <label for="username">Username</label><br />
+        <input type="text" value="Hoàng Trần" class="form-control" /><br />
+
+        <!-- Email -->
+        <label for="email">Email</label><br />
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email..."
+          focus
+          required
+        />
+        <br />
+
+        <!-- Input password -->
+        <label for="password">Password</label><br />
+        <input
+          class="form-control"
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password..."
+          required
+        />
+        <br />
+
+        <!-- Input number -->
+        <label for="age"> Age </label><br />
+        <input
+          class="form-control"
+          id="age"
+          type="number"
+          name="age"
+          min="1"
+          max="100"
+          placeholder="Age..."
+          step="0.1"
+        /><br />
+
+        <!-- Input radio -->
+        <div>
+          <label>Sex: </label>
+          <label for="male">
+            <input type="radio" name="general" id="male" value="1" checked />
+            Male
+          </label>
+          <label for="female">
+            <input type="radio" name="general" id="female" value="2" />
+            Female
+          </label>
+          <label for="no">
+            <input type="radio" name="general" id="no" value="3" />
+            Không xác định
+          </label>
+        </div>
+
+        <!-- checkbox -->
+        <div>
+          <label for="">Bạn biết F8 qua đâu?</label>
+          <label><input type="checkbox" name="source" checked />Youtube</label>
+          <label><input type="checkbox" name="source" />Google</label>
+          <label><input type="checkbox" name="source" />Facebook</label>
+        </div>
+
+        <!-- input file -->
+        <div>
+          <label for="avatar">Avatar:</label>
+          <input type="file" id="avatar" name="avatar" />
+        </div>
+
+        <!-- input date -->
+        <div>
+          <label for="">Birthday</label>
+          <input type="date" />
+        </div>
+
+        <!-- input range -->
+        <div>
+          <label for="price">Price</label>
+          <input type="range" name="price" id="price" class="form-control" />
+        </div>
+
+        <!-- input textarea -->
+        <div>
+          <label for="message">Comment</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Message..."
+          ></textarea>
+        </div>
+
+        <!-- input select option -->
+        <div>
+          <label for="address">Address:</label>
+          <select name="address" id="address">
+            <option value="0" hidden>Choose address</option>
+            <optgroup label="Miền bắc">
+              <option value="1">Thái Bình</option>
+              <option value="2">Hà Nội</option>
+              <option value="3">Hải Phòng</option>
+            </optgroup>
+            <optgroup label="Miền Trung">
+              <option value="4">Hà Tĩnh</option>
+              <option value="6">Nghệ An</option>
+            </optgroup>
+            <optgroup label="Miền Nam">
+              <option value="5">Hồ Chí Minh</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <hr />
+        <!-- input submit mặc định button có type="submit" -->
+        <div>
+          <button class="btn btn-primary">Đăng nhập</button>
+          <button class="btn btn-danger" type="reset">Reset</button>
+          <button type="button" class="btn btn-info">Button</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

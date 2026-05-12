@@ -1,0 +1,23 @@
+#title {
+  color: rgb(6, 18, 228);
+}
+
+.subtitle {
+  color: tomato;
+}
+
+h3 {
+  color: blueviolet;
+}
+
+.content h2 {
+  color: blue;
+}
+
+.element h2 {
+  color: palevioletred;
+}
+
+.menu > li > a {
+  color: red;
+}
